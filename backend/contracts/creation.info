@@ -1,0 +1,13 @@
+# How to make foundry project without `foundry init` by mylord jtriley
+# 1. Make directories
+mkdir src out lib
+
+# 2. Specify those directories in `foundry.toml` (see https://github.com/foundry-rs/foundry/blob/master/config/README.md)
+
+# 3. Add `forge-std` module to `lib`
+
+git submodule add https://github.com/foundry-rs/forge-std lib/forge-std
+
+
+# 3.5.  Run `git submodule update --init --recursive` in case the submodule gives problems
+# 4. Start creating contracts!
