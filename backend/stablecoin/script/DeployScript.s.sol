@@ -11,10 +11,10 @@ contract DeployScript is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        address oraclePolygon_usdc_usd = 0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7;
-        address oraclePolygon_matic_usd = 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0;
-        
-        RRUSD rrusd = new RRUSD(oraclePolygon_matic_usd);
+        // address oraclePolygon_matic_usd = 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0;
+        address mumbai_matic_usd = 0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada;
+
+        RRUSD rrusd = new RRUSD(mumbai_matic_usd);
         
         vm.stopBroadcast();
     }

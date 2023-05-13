@@ -1,19 +1,18 @@
 "use client";
-// import "./shim";
+import React, { useState } from "react";
 import { Connect } from "../components/Connect";
 import { Connected } from "../components/Connected";
-
+import SismoButton from "./custom-components/SismoButton";
 import Alice from "./custom-components/Alice";
 import Quevedo from "./custom-components/Quevedo";
 import SismoButton from "./custom-components/SismoButtonQuestion";
 import SismoButton2 from "./custom-components/SismoButtonAnswer";
 import "./general.css";
-// import all other components...
-
-import React, { useState } from "react";
+import "./page.css";
 
 const Page: React.FC = () => {
   const [view, setView] = useState<string>("answers");
+  const [search, setSearch] = useState<string>("");
 
   const renderContent = () => {
     switch (view) {
@@ -28,9 +27,20 @@ const Page: React.FC = () => {
 
   return (
     <div>
-      <h1>Ask Frens</h1>
-      <SismoButton></SismoButton>
-      <Connect />
+      <header className="header">
+        <h1>Ask Frens</h1>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="search-bar"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <div className="buttons">
+          <SismoButton />
+          <Connect />
+        </div>
+      </header>
       <Connected>
         <button onClick={() => setView("answers")}>My Answers</button>
         <button onClick={() => setView("questions")}>My Questions</button>
