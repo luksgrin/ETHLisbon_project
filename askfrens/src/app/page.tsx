@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Connect } from "../components/Connect";
 import { Connected } from "../components/Connected";
-import SismoButton from "./custom-components/SismoButton";
 import Alice from "./custom-components/Alice";
 import Quevedo from "./custom-components/Quevedo";
 import SismoButton from "./custom-components/SismoButtonQuestion";
