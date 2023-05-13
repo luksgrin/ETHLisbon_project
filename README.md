@@ -1,5 +1,16 @@
 # ETHLisbon_project
 
+## Setup
+```bash
+git clone https://github.com/luksgrin/ETHLisbon_project
+cd ETHLisbon_project
+```
+### Frontend 
+```bash
+cd frontend
+npm install # if not done before
+npm run dev
+```
 ## Actors
 - People who do questions (Quevedo)
 - People who answers (Alice)
