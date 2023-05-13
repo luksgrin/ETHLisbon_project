@@ -1,4 +1,9 @@
-# ETHLisbon_project
+# AskLens
+
+![AskLens_logo](./img/AskLens_logo.png)
+
+AskLens is a social media platform where users can ask questions and get answers from other users. The platform is built on top of the Lens Social Graph, employs Sismo Connect as its SSO and it's integrated with other DeFi protocols to allow users to donate to other users and to trade their donations.
+
 
 ## Setup
 ```bash
