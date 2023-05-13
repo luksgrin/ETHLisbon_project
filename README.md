@@ -24,7 +24,20 @@ bytes16 GROUP_ID = 0x945e9e7b1f95899328bf9c4490aba9fc;
 
 ### Smart Contracts
 
-All the logic of the platform is implemented in two smart contracts: [`AskLensQuestionWSismo.sol`](./backend/contracts/src/AskLensQuestionWSismo.sol) and [`AskLensThreadWSismo.sol.sol`](./backend/contracts/src/AskLensThreadWSismo.sol.sol). The workflow of the platform is as follows:
+All the logic of the platform is implemented in two smart contracts: [`AskLensQuestionWSismo.sol`](./backend/contracts/src/AskLensQuestionWSismo.sol) and [`AskLensThreadWSismo.sol.sol`](./backend/contracts/src/AskLensThreadWSismo.sol.sol). 
+
+Deployed versions of these contracts are found in:
+
+```solidity
+// Mumbai testnet
+address AskLensQuestionWSismo = 0xb1dabc876cc8e5d599f1362c72cd621b66a5c7f2;
+address AskLensThreadWSismo = 0x4e457c172144d4a1f08f61f54a37dd819a6ba28e;
+```
+
+_Verification was not possible due to internal RPC errors..._
+
+
+The workflow of the platform is as follows:
 
 1. A user can create a question to another user by calling the `mint` function of the `AskLensQuestionWSismo` contract. This function will verify that said user can prove ownership of a Lens handle NFT, via Sismo Connect.
 
