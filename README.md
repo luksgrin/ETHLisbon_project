@@ -4,6 +4,9 @@
 
 AskLens is a social media platform where users can ask questions and get answers from other users. The platform is built on top of the Lens Social Graph, employs Sismo Connect as its SSO and it's integrated with other DeFi protocols to allow users to donate to other users and to trade their donations.
 
+---
+
+The sismo group employed has the following groupId: 0x945e9e7b1f95899328bf9c4490aba9fc
 
 ## Setup
 ```bash
