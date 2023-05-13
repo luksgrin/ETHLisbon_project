@@ -7,13 +7,13 @@ AskLens is a social media platform where users can ask questions and get answers
 
 ## Setup
 ```bash
-git clone https://github.com/luksgrin/ETHLisbon_project
+git clone https://github.com/luksgrin/ETHLisbon_project && \
 cd ETHLisbon_project
 ```
 ### Frontend 
 ```bash
-cd frontend
-npm install # if not done before
+cd frontend && \
+npm install && \ # if not done before
 npm run dev
 ```
 ## Actors
