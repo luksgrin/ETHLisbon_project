@@ -4,7 +4,8 @@ import {
   SismoConnectClientConfig,
   SismoConnectResponse,
 } from "@sismo-core/sismo-connect-react";
-
+import { encodeAbiParameters } from "viem";
+import { useAccount } from 'wagmi'
 const ASK_LENS_APP_ID = "0x639312ba6099cd3a698a33416a25d345";
 const LENS_HANDLE_HOLDER_GROUP_ID = "0x945e9e7b1f95899328bf9c4490aba9fc";
 
@@ -16,14 +17,31 @@ export const sismoConnectConfig: SismoConnectClientConfig = {
 
 };
 export default function SismoButton() {
-  //hardcoded bullshit
-  const signMessage = (account: any) => {
-    return account;
+
+  const signQuestion = (questioner: any, answerer: string, ipfsHash: string) => {
+    return encodeAbiParameters(
+      [
+        { type: "address", name: "questionerAddress" },
+        { type: "address", name: "answererAddress" },
+        { type: "string", name: "ipfsHash" },
+      ],
+      [
+        questioner,
+        answerer as `0x${string}`,
+        ipfsHash
+      ]
+    );
   };
+
+  //hardcoded bullshit
   const setResponse = (response: any) => {
+    console.log("My friends this is the response:");
+    console.log(response);
     return response;
   };
-  const account = "hardcoded_account";
+  const { address } = useAccount();
+  const answerer = "0x0000000000000000000000000000000000000002"; // Account where we wanna send the question
+  const ipfsHash = "myIpfsHash"; // IPFS hash of the question
   return (
     <>
       <SismoConnectButton
@@ -35,12 +53,12 @@ export default function SismoButton() {
         claims={[{ groupId: LENS_HANDLE_HOLDER_GROUP_ID }]}
         // we ask the user to sign a message
         // it will be used onchain to prevent front running
-        signature={{ message: signMessage(account) }}
+        signature={{ message: signQuestion(address, answerer, ipfsHash) }}
         // onResponseBytes calls a 'setResponse' function
         // with the responseBytes returned by the Sismo Vault
         onResponseBytes={(responseBytes: string) => setResponse(responseBytes)}
         // Some text to display on the button
-        text={"Claim with Sismo"}
+        text={"Log in with Sismo"}
       />
     </>
   );
