@@ -1,19 +1,70 @@
-# AskLens
+# **AskLens**: a decentralized social media platform to ask questions and getting answers
 
 ![AskLens_logo](./img/AskLens_logo.png)
 
-AskLens is a social media platform where users can ask questions and get answers from other users. The platform is built on top of the Lens Social Graph, employs Sismo Connect as its SSO and it's integrated with other DeFi protocols to allow users to donate to other users and to trade their donations.
+_This project was built during the ETH Global Lisbon Hackathon held in Lisbon from May 12-14 2023._
+
+AskLens is a social media platform where users can ask questions and get answers from other users. The platform is built on top of the [**Lens Social Graph**](https://www.lens.xyz/), employs [**Sismo Connect**](https://www.sismo.io/) as its SSO and it's integrated with other DeFi protocols to allow users to donate to other users and to trade their donations.
 
 ---
 
-The sismo group employed has the following groupId: 0x945e9e7b1f95899328bf9c4490aba9fc
+### Sismo Connect utility
+
+Users log in into AskLens via Sismo Connect, which verifies that the user owns a Lens handle NFT (the Data Gem in this usecase) without having to reveal their private wallet (i.e. they can connect to this DApp and with a wallet that does not hold a Lens handle NFT but is in the same data vault as an address that does hold a Lens handle NFT).
+
+The following `bytes16` data are the relevant pieces that connect this DApp to Sismo Connect:
+
+```solidity
+bytes16 APP_ID = 0x639312ba6099cd3a698a33416a25d345;
+bytes16 GROUP_ID = 0x945e9e7b1f95899328bf9c4490aba9fc;
+```
+
+---
+
+### Smart Contracts
+
+All the logic of the platform is implemented in two smart contracts: [`AskLensQuestionWSismo.sol`](./backend/contracts/src/AskLensQuestionWSismo.sol) and [`AskLensThreadWSismo.sol.sol`](./backend/contracts/src/AskLensThreadWSismo.sol.sol). The workflow of the platform is as follows:
+
+1. A user can create a question to another user by calling the `mint` function of the `AskLensQuestionWSismo` contract. This function will verify that said user can prove ownership of a Lens handle NFT, via Sismo Connect.
+
+2. The question text is stored in the `Filecoin` IPFS storage. The saved data is a JSON schema such as the one provided below:
+
+```json
+{
+  "question":   "What is the meaning of life?",
+  "questioner": "0x1234...",
+  "answerer":   "0x5678...",
+  "timestamp":  1684004363,
+}
+```
+
+3. An ERC155 "question" token is minted to both users: the questioner and the answerer, where the token URI is the IPFS hash of the JSON schema above.
+
+4. The answerer will then have the option to answer the question by calling the `mint` function of the `AskLensThreadWSismo` contract. Again, this function will verify that said user can prove ownership of a Lens handle NFT, via Sismo Connect.
+
+5. The question data JSON schema is retrieved from filecoin and the answer's answer is appended to it. The resulting JSON schema is then stored in IPFS again. The saved data is a JSON schema such as the one provided below:
+
+```json
+{
+  "question":   "What is the meaning of life?",
+  "answer":     "The question of the meaning of life is subjective and deeply personal",
+  "questioner": "0x1234...",
+  "answerer":   "0x5678...",
+  "timestamp":  1684004501,
+}
+```
+
+6. The ERC155 "question" token is burned (for both the answerer and the questioner), and then an ERC1155 "thread" token is minted to both users again. Similarly as for the "question" ERC1155, the token URI is the IPFS hash of the JSON schema above.
+
+7. You can visualize these "threads" in the AskLens frontend!
+
 
 ## Setup
 ```bash
 git clone https://github.com/luksgrin/ETHLisbon_project && \
 cd ETHLisbon_project
 ```
-### Frontend 
+### Run the frontend 
 ```bash
 cd frontend && \
 npm install && \ # if not done before
