@@ -1,4 +1,4 @@
-// File: C:\Users\Deiv\Documents\Web3\LisbonHackhaton\final\ETHLisbon_project\askfrens\src\app\layout.tsx
+// File: /Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
