@@ -65,6 +65,10 @@ npm run dev
  
 ![img](https://i.ibb.co/b3cQfVQ/Lisbon-May-1.png)
 
+- Deployments
+
+![img](https://i.ibb.co/1n8Lq1n/Lisbon-May-2.png)
+
 ## Prizes
 Glossary:
 - Types of prizes
