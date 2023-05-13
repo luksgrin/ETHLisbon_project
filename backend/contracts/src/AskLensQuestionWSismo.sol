@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@sismo-connect-solidity/SismoLib.sol";
 
-contract AskLensQuestion is ERC1155, Ownable, SismoConnect {
+contract AskLensQuestionWSismo is ERC1155, Ownable, SismoConnect {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIds;

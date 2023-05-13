@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.10;
 
-import "./AskLensQuestion.sol";
+import "./AskLensQuestionWSismo.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@sismo-connect-solidity/SismoLib.sol";
 
-contract AskLensThread is ERC1155, Ownable, SismoConnect {
+contract AskLensThreadWSismo is ERC1155, Ownable, SismoConnect {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIds;
@@ -53,7 +53,7 @@ contract AskLensThread is ERC1155, Ownable, SismoConnect {
 
         _tokenIds.increment();
 
-        AskLensQuestion _AskLensQuestion = AskLensQuestion(AskLensQuestionContract);
+        AskLensQuestionWSismo _AskLensQuestion = AskLensQuestionWSismo(AskLensQuestionContract);
 
         require(
             _AskLensQuestion.balanceOf(msg.sender, questionId) > 0,

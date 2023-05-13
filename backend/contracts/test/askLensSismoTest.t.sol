@@ -1,9 +1,8 @@
-pragma solidity 0.8.10;
+pragma solidity ^0.8.10;
 
 import "forge-std/Test.sol";
-import "../src/AskLensQuestion.sol";
-import "../src/AskLensThread.sol";
-import "../script/deployment.s.sol";
+import "../src/AskLensQuestionWSismo.sol";
+import "../src/AskLensThreadWSismo.sol";
 
 contract ContractBTest is Test {
 
@@ -22,48 +21,50 @@ contract ContractBTest is Test {
         // Master (us) deploys contracts
         vm.startPrank(master);
 
-        // Deploy AskLensQuestion Contract
-        AskLensQuestion askLensQuestion = new AskLensQuestion();
-        console.log("AskLensQuestion Contract deployed at: ", address(askLensQuestion));
+        // Deploy AskLensQuestionWSismo Contract
+        AskLensQuestionWSismo askLensQuestionWSismo = new AskLensQuestionWSismo();
+        console.log("AskLensQuestionWSismo Contract deployed at: ", address(askLensQuestionWSismo));
 
-        // Deploy AskLensThread Contract
-        AskLensThread askLensThread = new AskLensThread();
-        console.log("AskLensThread Contract deployed at: ", address(askLensThread));
-        // Set AskLensQuestion Contract as QuestionContract in AskLensThread Contract
-        askLensThread.setQuestionContract(address(askLensQuestion));
+        // Deploy AskLensThreadWSismo Contract
+        AskLensThreadWSismo askLensThreadWSismo = new AskLensThreadWSismo();
+        console.log("AskLensThreadWSismo Contract deployed at: ", address(askLensThreadWSismo));
+        // Set AskLensQuestionWSismo Contract as QuestionContract in AskLensThreadWSismo Contract
+        askLensThreadWSismo.setQuestionContract(address(askLensQuestionWSismo));
 
-        // Set AskLensThread Contract as AnswerContract in AskLensQuestion Contract
-        askLensQuestion.setAnswerContract(address(askLensThread));
+        // Set AskLensThreadWSismo Contract as AnswerContract in AskLensQuestionWSismo Contract
+        askLensQuestionWSismo.setAnswerContract(address(askLensThreadWSismo));
         vm.stopPrank();
 
 
         // Quevedo asks a question
         vm.prank(quevedo);
-        askLensQuestion.mint(
+        askLensQuestionWSismo.mint(
+            "0x0",
             alice,
             "bafybeibgjz73qif3wl7eovwo2rnzq72fdoyorpcqpmxdyme6plaettam2e" // test ipfs hash
         );
         console.log("Quevedo asked a question");
         console.log(
             "Quevedo's balance of question: ",
-            askLensQuestion.balanceOf(quevedo, 1)
+            askLensQuestionWSismo.balanceOf(quevedo, 1)
         );
         console.log(
             "Alice's balance of question: ",
-            askLensQuestion.balanceOf(alice, 1)
+            askLensQuestionWSismo.balanceOf(alice, 1)
         );
         console.log(
             "Quevedo's balance of answer: ",
-            askLensThread.balanceOf(quevedo, 1)
+            askLensThreadWSismo.balanceOf(quevedo, 1)
         );
         console.log(
             "Alice's balance of answer: ",
-            askLensThread.balanceOf(alice, 1)
+            askLensThreadWSismo.balanceOf(alice, 1)
         );
 
         // Alice answers the question
         vm.prank(alice);
-        askLensThread.mint(
+        askLensThreadWSismo.mint(
+            "0x0",
             quevedo,
             1,
             "anotheripf" // test ipfs hash
@@ -71,19 +72,19 @@ contract ContractBTest is Test {
         console.log("Alice answered a question");
         console.log(
             "Quevedo's balance of question: ",
-            askLensQuestion.balanceOf(quevedo, 1)
+            askLensQuestionWSismo.balanceOf(quevedo, 1)
         );
         console.log(
             "Alice's balance of question: ",
-            askLensQuestion.balanceOf(alice, 1)
+            askLensQuestionWSismo.balanceOf(alice, 1)
         );
         console.log(
             "Quevedo's balance of answer: ",
-            askLensThread.balanceOf(quevedo, 1)
+            askLensThreadWSismo.balanceOf(quevedo, 1)
         );
         console.log(
             "Alice's balance of answer: ",
-            askLensThread.balanceOf(alice, 1)
+            askLensThreadWSismo.balanceOf(alice, 1)
         );
 
     }
