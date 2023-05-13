@@ -6,3 +6,9 @@
 	url = https://github.com/openzeppelin/openzeppelin-contracts
 [submodule "lib/openzeppelin-contracts"]
 	branch = v4.8.3
+[submodule "backend/contracts/sismo-connect-packages"]
+	path = backend/contracts/sismo-connect-packages
+	url = https://github.com/sismo-core/sismo-connect-packages
+[submodule "backend/contracts/lib/sismo-connect-packages"]
+	path = backend/contracts/lib/sismo-connect-packages
+	url = https://github.com/sismo-core/sismo-connect-packages
