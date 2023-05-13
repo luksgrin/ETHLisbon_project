@@ -5,7 +5,7 @@ import { Connected } from "../components/Connected";
 
 import Alice from "./custom-components/Alice";
 import Quevedo from "./custom-components/Quevedo";
-// import SismoButton from "./custom-components/SismoButton";
+import SismoButton from "./custom-components/SismoButton";
 import "./general.css";
 // import all other components...
 
@@ -28,7 +28,7 @@ const Page: React.FC = () => {
   return (
     <div>
       <h1>Ask Frens</h1>
-      {/* <SismoButton></SismoButton> */}
+      <SismoButton></SismoButton>
       <Connect />
       <Connected>
         <button onClick={() => setView("answers")}>My Answers</button>

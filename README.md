@@ -67,9 +67,9 @@ cd ETHLisbon_project
 ```
 ### Run the frontend 
 ```bash
-cd frontend && \
-npm install && \ # if not done before
-npm run dev
+cd askfrens && \
+yarn install && \ # if not done before
+yarn dev
 ```
 ## Actors
 - People who do questions (Quevedo)
