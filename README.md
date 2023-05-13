@@ -67,7 +67,7 @@ npm run dev
 
 - Deployments
 
-![img](https://i.ibb.co/1n8Lq1n/Lisbon-May-2.png)
+![img](https://i.ibb.co/0QtY8QW/Lisbon-May-3.png.png)
 
 ## Prizes
 Glossary:
