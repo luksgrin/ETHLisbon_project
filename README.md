@@ -42,7 +42,7 @@ All the logic of the platform is implemented in two smart contracts: [`AskLensQu
 
 4. The answerer will then have the option to answer the question by calling the `mint` function of the `AskLensThreadWSismo` contract. Again, this function will verify that said user can prove ownership of a Lens handle NFT, via Sismo Connect.
 
-5. The question data JSON schema is retrieved from filecoin and the answer's answer is appended to it. The resulting JSON schema is then stored in IPFS again. The saved data is a JSON schema such as the one provided below:
+5. The question data JSON schema is retrieved from filecoin, the timestamp is updated and the answer's answer is appended to it. The resulting JSON schema is then stored in IPFS again. The saved data is a JSON schema such as the one provided below:
 
 ```json
 {
