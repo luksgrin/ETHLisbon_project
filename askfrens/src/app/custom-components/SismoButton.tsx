@@ -5,14 +5,15 @@ import {
   SismoConnectResponse,
 } from "@sismo-core/sismo-connect-react";
 
+const ASK_LENS_APP_ID = "0x639312ba6099cd3a698a33416a25d345";
+const LENS_HANDLE_HOLDER_GROUP_ID = "0x945e9e7b1f95899328bf9c4490aba9fc";
+
 export const sismoConnectConfig: SismoConnectClientConfig = {
-  appId: "0x639312ba6099cd3a698a33416a25d345",
+  appId: ASK_LENS_APP_ID,
   devMode: {
     enabled: true,
   },
 
-  //   bytes16 APP_ID = 0x639312ba6099cd3a698a33416a25d345;
-  // bytes16 GROUP_ID = 0x945e9e7b1f95899328bf9c4490aba9fc;
 };
 export default function SismoButton() {
   //hardcoded bullshit
@@ -31,6 +32,7 @@ export default function SismoButton() {
         // the auth request we want to make
         // here we want the proof of a Sismo Vault ownership from our users
         auths={[{ authType: AuthType.VAULT }]}
+        claims={[{ groupId: LENS_HANDLE_HOLDER_GROUP_ID }]}
         // we ask the user to sign a message
         // it will be used onchain to prevent front running
         signature={{ message: signMessage(account) }}

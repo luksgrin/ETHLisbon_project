@@ -1,4 +1,5 @@
-# **AskLens**: a decentralized social media platform to ask questions and getting answers
+# **AskLens**: ask your frens!
+>_A decentralized social media platform to ask questions and getting answers_
 
 ![AskLens_logo](./img/AskLens_logo.png)
 
@@ -66,9 +67,9 @@ cd ETHLisbon_project
 ```
 ### Run the frontend 
 ```bash
-cd frontend && \
-npm install && \ # if not done before
-npm run dev
+cd askfrens && \
+yarn install && \ # if not done before
+yarn dev
 ```
 ## Actors
 - People who do questions (Quevedo)
