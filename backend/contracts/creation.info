@@ -1,6 +1,6 @@
 # How to make foundry project without `foundry init` by mylord jtriley
 # 1. Make directories
-mkdir src out lib
+mkdir src out lib script
 
 # 2. Specify those directories in `foundry.toml` (see https://github.com/foundry-rs/foundry/blob/master/config/README.md)
 
