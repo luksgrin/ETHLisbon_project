@@ -1,4 +1,5 @@
-# **AskLens**: a decentralized social media platform to ask questions and getting answers
+# **AskLens**: ask your frens!
+>_A decentralized social media platform to ask questions and getting answers_
 
 ![AskLens_logo](./img/AskLens_logo.png)
 
