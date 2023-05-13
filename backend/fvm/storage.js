@@ -1,15 +1,13 @@
 import { Web3Storage, File } from "web3.storage";
-import fs from "fs/promises";
 import dotenv from "dotenv";
 //dotenv.config();
-dotenv.config({ path: "../.env" });
-
+dotenv.config({ path: "./.env" });
 const token = process.env.WEBSTORAGE_KEY;
 
 // Initialize the client
 const client = new Web3Storage({ token });
 
-async function storeFile(data) {
+export async function storeFile(data) {
   // Read file from file system
   //const data = await fs.readFile(filePath);
 
@@ -30,7 +28,7 @@ async function storeFile(data) {
   return cid;
 }
 
-async function readFile(cid) {
+export async function readFile(cid) {
   // Get the file from web3.storage
   const res = await client.get(cid);
 
@@ -63,10 +61,10 @@ async function all(iterable) {
   return result;
 }
 
-const data = { name: "Brbr", job: "Lover" };
-storeFile(data)
-  .then((cid) => readFile(cid))
-  .catch(console.error);
+const data = { name: "David", job: "Sucker" };
+// storeFile(data)
+//   .then((cid) => readFile(cid))
+//   .catch(console.error);
 // Example usage
 // storeFile("file.json")
 //   .then((cid) => readFile(cid))
@@ -74,7 +72,9 @@ storeFile(data)
 
 const cid1 = "bafybeihypepnqzlkhdvtcen2rfacy3f723yvybin64yz62rapx7w2zy5sy";
 const cid2 = "bafybeie3xwbqiall477iy36u6ek2mr6bjx5vvbwm5rcgtebmiw74cgm67e";
+const cid3 = "bafybeibgjz73qif3wl7eovwo2rnzq72fdoyorpcqpmxdyme6plaettam2eß";
+const cid4 = "bafybeiagupothay7owoxnexjezepeg5g5nnl5k3mdtm62xtwgygzgc3kgu";
 
-// readFile(cid)
-//   .then((content) => console.log(content))
-//   .catch(console.error);
+readFile(cid4)
+  .then((content) => console.log(content))
+  .catch(console.error);
