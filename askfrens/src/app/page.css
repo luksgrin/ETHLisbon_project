@@ -1,23 +1,61 @@
+/* page.css */
+
+.AskFrens__MainPage {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  padding: 10px 0;
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  background-color: #fff;
+  padding: 1em;
+  z-index: 1;
+}
+
+.Header__Main {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .search-bar {
   flex-grow: 1;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Connect__Buttons {
+  display: flex;
+  gap: 1em;
 }
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 1em;
+}
+
+.AskFrens__MainPage {
+  background: #fff;
+}
+
+.Rendered__Content {
+  /* margin-top: 3rem; */
+}
+.Options__Container {
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+}
+.sismoConnectButton {
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
 }

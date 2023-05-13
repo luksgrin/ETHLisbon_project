@@ -3,7 +3,13 @@ import React, { useState, ReactNode } from "react";
 import QuestionCard from "./QuestionCard";
 import "./Actors.css";
 
-export default function RootLayout({}: {}) {
+export default function RootLayout({
+  sender,
+  receiver,
+}: {
+  sender: any;
+  receiver: string;
+}) {
   const [privateState, setPrivateState] = useState(false);
   const togglePrivateState = () => setPrivateState(!privateState);
 
@@ -16,10 +22,6 @@ export default function RootLayout({}: {}) {
         <img className="Card__UserAvatar" src="avatar" alt="avatar" />
         <div className="Card__UserDescription">
           {/* brief description under avatar image */}
-        </div>
-        <div className="AskMe">
-          <label htmlFor="question">Ask me:</label>
-          <input type="text" id="question" name="question" />
         </div>
       </div>
 
