@@ -64,7 +64,6 @@ contract ContractBTest is Test {
         // Alice answers the question
         vm.prank(alice);
         askLensThread.mint(
-            alice,
             quevedo,
             1,
             "anotheripf" // test ipfs hash
