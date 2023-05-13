@@ -1,4 +1,21 @@
+//@ts-ignore
+import React, { useState, ReactNode } from "react";
+import "./QACards.css";
+import DonationModal from "./Donate";
+
 export default function QuestionCard({}: {}) {
+  const [modalContent, setModalContent] = useState<React.ReactNode | null>(
+    null
+  );
+
+  const openModal = (content: React.ReactNode) => {
+    setModalContent(content);
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
+  };
+
   return (
     <>
       <div className="Card">
@@ -18,7 +35,20 @@ export default function QuestionCard({}: {}) {
           <div className="Card__Footer">
             <div>UserName</div>
             <div>Text about the time</div>
-            <button>Donate</button>
+            <button
+              onClick={() =>
+                openModal(<DonationModal closeModal={closeModal} />)
+              }
+            >
+              Donate
+            </button>
+            ;
+            {modalContent && (
+              <div className="modal">
+                <button onClick={closeModal}>Close</button>
+                {modalContent}
+              </div>
+            )}
             <button>Solve</button>
           </div>
         </div>

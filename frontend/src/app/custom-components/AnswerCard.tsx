@@ -1,8 +1,6 @@
-import { Providers } from "../providers";
-
-export const metadata = {
-  title: "wagmi",
-};
+//@ts-ignore
+import React, { useState, ReactNode } from "react";
+import "./QACards.css";
 
 export default function AnswerCard({}: {}) {
   return (

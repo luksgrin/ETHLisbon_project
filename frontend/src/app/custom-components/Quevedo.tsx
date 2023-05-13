@@ -1,10 +1,12 @@
 //@ts-ignore
 import React, { useState, ReactNode } from "react";
 import QuestionCard from "./QuestionCard";
+import "./Actors.css";
 
 export default function RootLayout({}: {}) {
   const [privateState, setPrivateState] = useState(false);
   const togglePrivateState = () => setPrivateState(!privateState);
+
   return (
     <div className={`Main__Content ${privateState ? "Private" : ""}`}>
       <div className="Card__User Background1">
