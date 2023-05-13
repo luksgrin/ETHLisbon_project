@@ -5,7 +5,8 @@ import { Connected } from "../components/Connected";
 
 import Alice from "./custom-components/Alice";
 import Quevedo from "./custom-components/Quevedo";
-import SismoButton from "./custom-components/SismoButton";
+import SismoButton from "./custom-components/SismoButtonQuestion";
+import SismoButton2 from "./custom-components/SismoButtonAnswer";
 import "./general.css";
 // import all other components...
 
