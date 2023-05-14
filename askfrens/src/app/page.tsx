@@ -11,7 +11,7 @@ import "./page.css";
 const Page: React.FC = () => {
   const [view, setView] = useState<string>("answers");
   const [search, setSearch] = useState<string>("");
-
+  const [searchedAddress, setSearched] = useState<string>("");
   const renderContent = () => {
     switch (view) {
       case "answers":
@@ -23,26 +23,36 @@ const Page: React.FC = () => {
     }
   };
 
+  const lookForFrens = () => {
+    setSearched(search);
+    setView("answers");
+  };
+
   return (
-    <div>
+    <div className="AskFrens__MainPage">
       <header className="header">
-        <h1>Ask Frens</h1>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="search-bar"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <div className="buttons">
-          <SismoButton />
+        <div className="Header__Main">
+          <h1>Ask Frens</h1>
+          <input
+            type="text"
+            placeholder="Search..."
+            className="search-bar"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button onClick={() => lookForFrens()}>Look For Frens</button>
+        </div>
+        <div className="Connect__Buttons buttons ">
           <Connect />
         </div>
       </header>
       <Connected>
-        <button onClick={() => setView("answers")}>My Answers</button>
-        <button onClick={() => setView("questions")}>My Questions</button>
-        {renderContent()}
+        <div className="Options__Container">
+          <button onClick={() => setView("answers")}>My Answers</button>
+          <button onClick={() => setView("questions")}>My Questions</button>
+        </div>
+        <SismoButton />
+        <div className="Rendered__Content">{renderContent()}</div>
       </Connected>
     </div>
   );
