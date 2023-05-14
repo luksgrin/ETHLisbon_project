@@ -26,7 +26,13 @@ export default function SismoButton({
 }) {
   const [_response, setResponseSismo] = useState<any>();
   var web3: any;
-
+  const checkReceiver = (receiver: any) => {
+    if (receiver.length === 42) return receiver;
+    window.alert(
+      "receiver has no good address length, returning by default 0x0000000000000000000000000000000000000002"
+    );
+    return "0x0000000000000000000000000000000000000002";
+  };
   const signQuestion = (
     questioner: any,
     answerer: string,
@@ -49,14 +55,14 @@ export default function SismoButton({
   ) => {
     console.log("My friends this is the response:");
     console.log(response, receiver, cid);
-
+    let newReceiver = checkReceiver(receiver);
     try {
       const res = await fetch("http://localhost:3001/sismo-verification", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ response, receiver, cid }),
+        body: JSON.stringify({ response, newReceiver, cid }),
       });
 
       const data = await res.json();
@@ -87,14 +93,19 @@ export default function SismoButton({
     });
     const account = accounts[0];
     const signature = await web3.eth.personal.sign(data, account, ""); // Replace 'test password' with the actual password if necessary
-
+    let newReceiver = checkReceiver(receiver);
     try {
       const res = await fetch("http://localhost:3001/sismo-verification", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ response: signature, receiver, cid, bytesData }),
+        body: JSON.stringify({
+          response: signature,
+          newReceiver,
+          cid,
+          bytesData,
+        }),
       });
 
       const resultData = await res.json();
@@ -119,7 +130,8 @@ export default function SismoButton({
   const { address } = useAccount();
   console.log(receiver);
   console.log(typeof receiver); //0x0000000000000000000000000000000000000002
-  const answerer = receiver; // Account where we wanna send the question
+  let newReceiver = checkReceiver(receiver);
+  const answerer = newReceiver; // Account where we wanna send the question
   const ipfsHash = cid; // IPFS hash of the question
   console.log(ipfsHash, "sismo ipfs hash");
   return (

@@ -35,6 +35,7 @@ export default function Alice({
     date: any
   ) => {
     const data = { sender, receiver, question, date };
+
     console.log(data);
     try {
       const response = await fetch("http://localhost:3001/store", {
@@ -81,8 +82,7 @@ export default function Alice({
               onChange={(e) => setQuestion(e.target.value)}
             />
             <button onClick={() => createQuestion()}>Submit</button>
-            {sismo ? "Ready" : "Not ready to sismo"}
-            <SismoButton cid={_cid} receiver={receiver} />{" "}
+            {sismo && <SismoButton cid={_cid} receiver={receiver} />}{" "}
             {/* SismoButton will only render when sismo state is true */}
           </div>
         </div>
