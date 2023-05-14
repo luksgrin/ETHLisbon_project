@@ -21,6 +21,16 @@ export default function RootLayout({
     "bafybeibpk4ll3ez7b7vcn3vls4ervucar5svsapaiwoflqojmiv4c3enras",
   ];
   const [questionData, setQuestionData] = useState([]);
+  //code for lens
+  const [profileData, setProfileData] = useState(null);
+  // Custom functions to fetch profile data by address and handle
+  const fetchProfileDataByAddress = (address: any) => {
+    return fetch(`http://localhost:3001/profile-data/${address}`)
+      .then((response) => response.json())
+      .catch((error) => console.error("Error:", error));
+  };
+  // should be sender outside of testing
+  fetchProfileDataByAddress(receiver).then((data) => setProfileData(data));
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,10 +51,14 @@ export default function RootLayout({
     <div className={`Main__Content ${privateState ? "Private" : ""}`}>
       <div className="Card__User Background1">
         <div className="Avatar__Container">
-          <img className="Card__UserAvatar" src="avatar" alt="avatar" />
-        </div>{" "}
+          <img
+            className="Card__UserAvatar"
+            src={profileData ? profileData.pictureUrl : ""}
+            alt="avatar"
+          />
+        </div>
         <div className="Card__UserDescription">
-          brief description under avatar image
+          {profileData ? profileData.bio : "Brief description example "}
         </div>
       </div>
 

@@ -4,8 +4,6 @@ import { Connect } from "../components/Connect";
 import { Connected } from "../components/Connected";
 import Alice from "./custom-components/Alice";
 import Quevedo from "./custom-components/Quevedo";
-import SismoButton from "./custom-components/SismoButtonQuestion";
-import SismoButton2 from "./custom-components/SismoButtonAnswer";
 import "./general.css";
 import "./page.css";
 import { useAccount } from "wagmi";
@@ -26,15 +24,40 @@ const Page: React.FC = () => {
     }
   };
 
+  //code for lens
+  const [profileData, setProfileData] = useState(null);
+  const [profileDataByHandle, setProfileDataByHandle] = useState(null);
+  // Custom functions to fetch profile data by address and handle
+  const fetchProfileDataByAddress = (address: any) => {
+    return fetch(`http://localhost:3001/profile-data/${address}`)
+      .then((response) => response.json())
+      .catch((error) => console.error("Error:", error));
+  };
+
+  const fetchProfileDataByHandle = (handle: any) => {
+    return fetch(`http://localhost:3001/profile-handle/${handle}`)
+      .then((response) => response.json())
+      .catch((error) => console.error("Error:", error));
+  };
+
   const lookForFrens = () => {
-    if (search.length === 42) {
-      console.log("ASDASDJKL", search);
+    var _address = search;
+    if (_address.length === 42) {
+      console.log("ASDASDJKL", _address);
       setSearched(search);
       setView("answers");
-    } else
-      console.log(
-        "Not good length, try " + "0x0000000000000000000000000000000000000002"
-      );
+    } else {
+      var lensVar = fetchProfileDataByHandle(_address);
+      console.log(lensVar);
+      if (lensVar.address.length === 42) {
+        setSearched(search);
+        setView("answers");
+      } else {
+        console.log(
+          "Not good length, try " + "0x0000000000000000000000000000000000000002"
+        );
+      }
+    }
   };
 
   return (

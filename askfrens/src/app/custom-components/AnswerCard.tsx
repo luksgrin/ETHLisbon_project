@@ -6,11 +6,13 @@ import DonationModal from "./Donate";
 export default function AnswerCard({
   sender,
   receiver,
+  answer,
   question,
   date,
 }: {
   sender: any;
   receiver: any;
+  answer: any;
   question: any;
   date: any;
 }) {
@@ -25,7 +27,7 @@ export default function AnswerCard({
   const closeModal = () => {
     setModalContent(null);
   };
-  const getLens = () => {
+  const getLens = (lens: any) => {
     return "test.lens";
   };
   return (
@@ -39,13 +41,15 @@ export default function AnswerCard({
               alt="avatar"
             ></img>
           </div>
-          Question default title
+          <div className="WrapperAnswer">
+            <div>{answer}</div>
+            <div>{question}</div>
+          </div>
         </div>
         <div className="Card__Content">
           <div className="Card__Footer">
-            <div>UserName</div>
-            <div>Text time</div>
-
+            <div>{sender}</div>
+            <div>Written at {date}</div>
             <button
               onClick={() =>
                 openModal(

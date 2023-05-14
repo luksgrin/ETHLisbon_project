@@ -24,12 +24,9 @@ export default function Alice({
   const [question, setQuestion] = useState<string>("");
 
   const cids = [
-    "bafybeidmtyxkghze3gsirlm6l4ydfb4hvvvk3o2bsrz7fivohlggufeiyu",
-    "bafybeigw3mjlxfwk6o2vudilg6cbj547zaipuyvwpumxk6dcf25phuunxa",
-    "bafybeibsoednknhtnqkrepk5tuolgpejl2xbv2smlpip4ovrxsgnjbs5vy",
-    "bafybeifwh2bgj4d5xxtdrnjfwkpcooevqxtodgrxkrsgx342s4oyrc2epq",
-    "bafybeianvapgaj53b3wtgkbwmtmxa4nzptboffsbatdzem2djbiklkdvfe",
-    "bafybeibpk4ll3ez7b7vcn3vls4ervucar5svsapaiwoflqojmiv4c3enras",
+    "bafybeig35gz2s7k6qjmfxk7onmtsg2rvurxp4h4dnrbokl5doqillpjkme",
+    "bafybeigsp4yac4pchbqjly7bcjafthenfxvfkrb3x6g7m7qxunlhil7fda",
+    "bafybeiat6kboodlvocjgggtnvaoyl2jj5db5udv4uanjxmkrjhk4bpcpqu",
   ];
   const [questionData, setQuestionData] = useState([]);
 
@@ -40,13 +37,29 @@ export default function Alice({
         const content = await res.json();
         return content;
       });
-
       const allData = await Promise.all(dataPromises);
+      console.log(allData);
       setQuestionData(allData);
     };
 
     fetchData();
   }, []);
+
+  //code for lens
+  const [profileData, setProfileData] = useState(null);
+  const [profileDataByHandle, setProfileDataByHandle] = useState(null);
+  // Custom functions to fetch profile data by address and handle
+  const fetchProfileDataByAddress = (address: any) => {
+    return fetch(`http://localhost:3001/profile-data/${address}`)
+      .then((response) => response.json())
+      .catch((error) => console.error("Error:", error));
+  };
+
+  const fetchProfileDataByHandle = (handle: any) => {
+    return fetch(`http://localhost:3001/profile-handle/${handle}`)
+      .then((response) => response.json())
+      .catch((error) => console.error("Error:", error));
+  };
 
   const createQuestion = () => {
     console.log("QuestionCreated");
@@ -54,6 +67,15 @@ export default function Alice({
     storeIPFS(sender, receiver, question, isoDateString);
   };
 
+  const feedQuestionAnswer = () => {
+    var add = "0xf12d31b798db234c55d9b50c3854f99db6bddaea";
+    var receiver = "0xa322bD417154D04d5704952E550288f0f91044Bd";
+    var question = "How are you doing on foundry?";
+    var answer =
+      "ine thanks, worth the time to learn it, easy to use the fuzzing feature";
+    var isoDateString = new Date().toISOString();
+    storeIPFS2(sender, receiver, answer, question, isoDateString);
+  };
   const storeIPFS = async (
     sender: any,
     receiver: any,
@@ -85,6 +107,41 @@ export default function Alice({
     }
   };
 
+  // store question + answer
+  const storeIPFS2 = async (
+    sender: any,
+    receiver: any,
+    question: any,
+    answer: any,
+    date: any
+  ) => {
+    const data = { sender, receiver, question, date, answer };
+
+    console.log(data);
+    try {
+      const response = await fetch("http://localhost:3001/store", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const { cid } = await response.json();
+        console.log(`Stored file with CID: ${cid}`);
+        setSismo(true);
+        setCid(String(cid));
+      } else {
+        console.error("Failed to store file");
+      }
+    } catch (err) {
+      console.error(`Failed to store file: ${err}`);
+    }
+  };
+
+  // feedQuestionAnswer();
+
   return (
     <div className={`Main__Content ${privateState ? "Private" : ""}`}>
       <div className="Card__User Background1">
@@ -92,10 +149,15 @@ export default function Alice({
           {privateState ? "Public" : "Private"}
         </button>
         <div className="Avatar__Container">
-          <img className="Card__UserAvatar" src="avatar" alt="avatar" />
+          <img
+            className="Card__UserAvatar"
+            src={profileData ? profileData.pictureUrl : ""}
+            alt="avatar"
+          />
         </div>
         <div className="Card__UserDescription">
-          Lorem ipsim description
+          {profileData ? profileData.bio : "Lorem "}
+          Lorem ipsim description Address:
           {/* brief description under avatar image */}
         </div>
         <div className="AskMe">
@@ -121,6 +183,7 @@ export default function Alice({
             sender={item.sender}
             receiver={item.receiver}
             question={item.question}
+            answer={item.answer}
             date={item.date}
           />
         ))}
