@@ -15,7 +15,6 @@ const abi = [
 const contract = new ethers.Contract(AskLensQuestionWSismo, abi, provider);
 
 
-
 // Initialize the client
 const client = new Web3Storage({ token });
 
