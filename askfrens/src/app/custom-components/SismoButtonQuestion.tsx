@@ -65,10 +65,10 @@ export default function SismoButton({
     return response;
   };
   //hardcoded bullshit
-  const setResponse = (response: any) => {
+  const setResponse = async (response: any) => {
     console.log("My friends this is the response:");
     console.log(response, receiver, cid);
-    setSismoResponse(response, receiver, cid);
+    await setSismoResponse(response, receiver, cid);
     // response byte + cid +
     return response;
   };
