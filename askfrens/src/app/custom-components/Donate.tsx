@@ -34,6 +34,11 @@ export default function DonationModal({
     var selected_token = selectedToken;
 
     console.log("token: ", selected_token)
+<<<<<<< HEAD
+=======
+    // if()
+
+>>>>>>> bafdb5f (a)
     sendTransaction({
       //chainId: 80001,
       to: selected_token,

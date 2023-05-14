@@ -742,6 +742,32 @@
         "async": false
       }
     },
+    "(app-client)/./src/app/providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "Providers": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "Providers",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/app/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/page.tsx",
@@ -819,42 +845,16 @@
         ],
         "async": false
       }
-    },
-    "(app-client)/./src/app/providers.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "Providers": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "Providers",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
     }
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page": [
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/page": [
       "static/css/app/page.css"
     ]
   },
   "clientModules": {
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -862,7 +862,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -870,7 +870,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -878,7 +878,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -886,7 +886,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -894,7 +894,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -902,7 +902,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#getServerActionDispatcher": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#getServerActionDispatcher": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "getServerActionDispatcher",
       "chunks": [
@@ -910,7 +910,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#getServerActionDispatcher": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#getServerActionDispatcher": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "getServerActionDispatcher",
       "chunks": [
@@ -918,7 +918,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -926,7 +926,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -934,7 +934,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#TODO-APP": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -942,7 +942,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#TODO-APP": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -950,7 +950,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#__NA": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -958,7 +958,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#__NA": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -966,7 +966,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#location": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -974,7 +974,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#location": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -982,7 +982,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#\"http": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -990,7 +990,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#\"http": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -998,7 +998,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#searchParams": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -1006,7 +1006,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#searchParams": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -1014,7 +1014,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#pathname": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -1022,7 +1022,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#pathname": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -1030,7 +1030,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#type": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1038,7 +1038,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#type": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1046,7 +1046,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#cache": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1054,7 +1054,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#cache": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1062,7 +1062,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#status": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1070,7 +1070,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#status": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1078,7 +1078,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#data": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1086,7 +1086,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#data": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1094,7 +1094,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#subTreeData": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1102,7 +1102,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#subTreeData": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1110,7 +1110,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#parallelRoutes": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1118,7 +1118,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#parallelRoutes": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1126,7 +1126,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#mutable": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1134,7 +1134,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#mutable": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1142,7 +1142,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#isExternalUrl": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1150,7 +1150,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#isExternalUrl": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1158,7 +1158,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#locationSearch": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1166,7 +1166,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#locationSearch": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1174,7 +1174,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#back": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1182,7 +1182,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#back": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1190,7 +1190,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#forward": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1198,7 +1198,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#forward": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1206,7 +1206,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#prefetch": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1214,7 +1214,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#prefetch": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1222,7 +1222,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#kind": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1230,7 +1230,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#kind": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1238,7 +1238,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#replace": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1246,7 +1246,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#replace": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1254,7 +1254,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#push": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1262,7 +1262,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#push": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1270,7 +1270,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#refresh": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1278,7 +1278,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#refresh": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1286,7 +1286,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#origin": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1294,7 +1294,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#origin": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1302,7 +1302,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#fastRefresh": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1310,7 +1310,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#fastRefresh": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1318,7 +1318,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#router": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1326,7 +1326,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#router": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1334,7 +1334,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#(eg": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#(eg": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "(eg",
       "chunks": [
@@ -1342,7 +1342,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#(eg": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#(eg": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "(eg",
       "chunks": [
@@ -1350,7 +1350,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#url": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1358,7 +1358,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#url": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1366,7 +1366,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#tree": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1374,7 +1374,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#tree": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1382,7 +1382,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#notFound": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1390,7 +1390,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#notFound": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1398,7 +1398,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#notFoundStyles": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1406,7 +1406,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#notFoundStyles": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1414,7 +1414,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#asNotFound": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1422,7 +1422,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#asNotFound": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1430,7 +1430,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#pushRef": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1438,7 +1438,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#pushRef": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1446,7 +1446,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#canonicalUrl": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1454,7 +1454,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#canonicalUrl": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1462,7 +1462,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#sync": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1470,7 +1470,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#sync": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1478,7 +1478,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1486,7 +1486,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1494,7 +1494,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#childNodes": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1502,7 +1502,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#childNodes": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1510,7 +1510,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#assetPrefix": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1518,7 +1518,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#assetPrefix": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1526,7 +1526,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\app-router.js#errorComponent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1534,7 +1534,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js#errorComponent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1542,7 +1542,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1550,7 +1550,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1558,7 +1558,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1566,7 +1566,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1574,7 +1574,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1582,7 +1582,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1590,7 +1590,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1598,7 +1598,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1606,7 +1606,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#ErrorBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1614,7 +1614,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#ErrorBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1622,7 +1622,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#error": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1630,7 +1630,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#error": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1638,7 +1638,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#https": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1646,7 +1646,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#https": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1654,7 +1654,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#fontFamily": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1662,7 +1662,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#fontFamily": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1670,7 +1670,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#height": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1678,7 +1678,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#height": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1686,7 +1686,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#textAlign": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1694,7 +1694,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#textAlign": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1702,7 +1702,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#display": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1710,7 +1710,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#display": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1718,7 +1718,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#flexDirection": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1726,7 +1726,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#flexDirection": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1734,7 +1734,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#alignItems": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1742,7 +1742,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#alignItems": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1750,7 +1750,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#justifyContent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1758,7 +1758,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#justifyContent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1766,7 +1766,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#desc": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1774,7 +1774,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#desc": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1782,7 +1782,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#text": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1790,7 +1790,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#text": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1798,7 +1798,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#fontSize": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1806,7 +1806,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#fontSize": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1814,7 +1814,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#fontWeight": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1822,7 +1822,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#fontWeight": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1830,7 +1830,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#lineHeight": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1838,7 +1838,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#lineHeight": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1846,7 +1846,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#margin": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1854,7 +1854,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#margin": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1862,7 +1862,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#reset": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -1870,7 +1870,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#reset": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -1878,7 +1878,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#style": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -1886,7 +1886,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#style": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -1894,7 +1894,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#\"Digest": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -1902,7 +1902,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#\"Digest": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -1910,7 +1910,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#errorComponent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -1918,7 +1918,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#errorComponent": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -1926,7 +1926,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#errorStyles": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -1934,7 +1934,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#errorStyles": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -1942,7 +1942,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\error-boundary.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -1950,7 +1950,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -1958,7 +1958,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -1966,7 +1966,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -1974,7 +1974,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -1982,7 +1982,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -1990,7 +1990,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -1998,7 +1998,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -2006,7 +2006,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2014,7 +2014,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2022,7 +2022,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#RedirectBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2030,7 +2030,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#RedirectBoundary": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2038,7 +2038,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#redirect": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2046,7 +2046,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#redirect": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2054,7 +2054,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#redirectType": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#redirectType": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirectType",
       "chunks": [
@@ -2062,7 +2062,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#redirectType": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirectType": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirectType",
       "chunks": [
@@ -2070,7 +2070,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#reset": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2078,7 +2078,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#reset": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2086,7 +2086,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#router": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2094,7 +2094,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#router": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2102,7 +2102,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2110,7 +2110,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js#value": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2118,7 +2118,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2126,7 +2126,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2134,7 +2134,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2142,7 +2142,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2150,7 +2150,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2158,7 +2158,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2166,7 +2166,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -2174,7 +2174,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -2182,7 +2182,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -2190,7 +2190,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -2198,7 +2198,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#CacheStates": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -2206,7 +2206,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#CacheStates": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -2214,7 +2214,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#AppRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -2222,7 +2222,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#AppRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -2230,7 +2230,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#LayoutRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -2238,7 +2238,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#LayoutRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -2246,7 +2246,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -2254,7 +2254,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -2262,7 +2262,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js#TemplateContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -2270,7 +2270,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js#TemplateContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -2278,7 +2278,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -2286,7 +2286,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -2294,7 +2294,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -2302,7 +2302,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -2310,15 +2310,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js#SearchParamsContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
-      "name": "SearchParamsContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js#SearchParamsContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "SearchParamsContext",
       "chunks": [
@@ -2326,7 +2318,15 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js#PathnameContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "SearchParamsContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -2334,7 +2334,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js#PathnameContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -2342,7 +2342,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -2350,7 +2350,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -2358,7 +2358,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -2366,7 +2366,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -2374,15 +2374,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js#ServerInsertedHTMLContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
-      "name": "ServerInsertedHTMLContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js#ServerInsertedHTMLContext": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "ServerInsertedHTMLContext",
       "chunks": [
@@ -2390,7 +2382,15 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "ServerInsertedHTMLContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -2398,7 +2398,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -2406,7 +2406,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2414,7 +2414,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2422,7 +2422,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\layout-router.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2430,7 +2430,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2438,7 +2438,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\layout-router.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2446,7 +2446,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2454,7 +2454,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2462,7 +2462,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2470,7 +2470,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2478,7 +2478,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2486,7 +2486,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2494,7 +2494,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2502,7 +2502,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2510,7 +2510,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2518,7 +2518,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2526,7 +2526,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2534,7 +2534,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2542,7 +2542,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2550,42 +2550,66 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Actors.css#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/providers.tsx": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/providers.tsx#": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/providers.tsx#Providers": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "Providers",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/custom-components/Actors.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css"
       ]
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Donate.css#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/custom-components/Donate.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css"
       ]
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\QACards.css#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/custom-components/QACards.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css"
       ]
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/general.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css"
       ]
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.css#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/page.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/page.css"
       ]
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.tsx": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/page.tsx": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "*",
       "chunks": [
@@ -2593,7 +2617,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.tsx#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/page.tsx#": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "",
       "chunks": [
@@ -2601,7 +2625,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.tsx#default": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/app/page.tsx#default": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "default",
       "chunks": [
@@ -2609,7 +2633,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connect.tsx": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connect.tsx": {
       "id": "(app-client)/./src/components/Connect.tsx",
       "name": "*",
       "chunks": [
@@ -2617,7 +2641,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connect.tsx#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connect.tsx#": {
       "id": "(app-client)/./src/components/Connect.tsx",
       "name": "",
       "chunks": [
@@ -2625,7 +2649,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connect.tsx#Connect": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connect.tsx#Connect": {
       "id": "(app-client)/./src/components/Connect.tsx",
       "name": "Connect",
       "chunks": [
@@ -2633,7 +2657,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connected.tsx": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connected.tsx": {
       "id": "(app-client)/./src/components/Connected.tsx",
       "name": "*",
       "chunks": [
@@ -2641,7 +2665,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connected.tsx#": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connected.tsx#": {
       "id": "(app-client)/./src/components/Connected.tsx",
       "name": "",
       "chunks": [
@@ -2649,35 +2673,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\components\\Connected.tsx#Connected": {
+    "/Users/misirov/eth_lisbon/ETHLisbon_project/askfrens/src/components/Connected.tsx#Connected": {
       "id": "(app-client)/./src/components/Connected.tsx",
       "name": "Connected",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#Providers": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "Providers",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     }
