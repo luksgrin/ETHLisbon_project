@@ -18,3 +18,14 @@ export async function sismoVerification(data) {
   console.log("Stored file with data:", data);
   return data;
 }
+
+export async function mint() {
+
+  const provider = new ethers.providers.JsonRpcProvider("https://rpc-mumbai.maticvigil.com/");
+  const AskLensQuestionWSismo = "0xb1dAbC876Cc8e5D599F1362c72Cd621B66a5c7f2"
+  const abi = [
+    "function mint()"
+  ] 
+  const contract = new ethers.Contract(AskLensQuestionWSismo, abi, provider);
+
+}
