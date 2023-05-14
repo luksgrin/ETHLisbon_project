@@ -9,6 +9,7 @@ import { useAccount } from "wagmi";
 import React, { useState, ReactNode } from "react";
 const ASK_LENS_APP_ID = "0x639312ba6099cd3a698a33416a25d345";
 const LENS_HANDLE_HOLDER_GROUP_ID = "0x945e9e7b1f95899328bf9c4490aba9fc";
+import Web3 from "web3";
 
 export const sismoConnectConfig: SismoConnectClientConfig = {
   appId: ASK_LENS_APP_ID,
@@ -24,6 +25,7 @@ export default function SismoButton({
   receiver: any;
 }) {
   const [_response, setResponseSismo] = useState<any>();
+  var web3: any;
 
   const signQuestion = (
     questioner: any,
@@ -67,6 +69,45 @@ export default function SismoButton({
 
     return response;
   };
+
+  const getMetaTransaction: any = async (
+    receiver: string,
+    cid: string,
+    bytesData: string // Assuming bytes data is passed as a hex string
+  ) => {
+    // This is the data you want to sign.
+    const data = web3.eth.abi.encodeParameters(
+      ["address", "string", "bytes"],
+      [receiver, cid, bytesData]
+    );
+
+    // Create the signature
+    const accounts = await window.ethereum.request({
+      method: "eth_requestAccounts",
+    });
+    const account = accounts[0];
+    const signature = await web3.eth.personal.sign(data, account, ""); // Replace 'test password' with the actual password if necessary
+
+    try {
+      const res = await fetch("http://localhost:3001/sismo-verification", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ response: signature, receiver, cid, bytesData }),
+      });
+
+      const resultData = await res.json();
+
+      // Handle the response data from the server here
+      console.log(resultData);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
+    return signature;
+  };
+
   //hardcoded bullshit
   const setResponse = async (response: any) => {
     console.log("My friends this is the response:");
