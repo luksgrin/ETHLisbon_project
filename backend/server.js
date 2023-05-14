@@ -40,7 +40,7 @@ app.post("/sismo-verification", (req, res) => {
   const { sismo, receiver, cid } = req.body;
   // Perform the sismo verification logic here
   // ...
-  
+  sismoVerification(sismo, receiver, cid);
   // Return the verification result
   res.json({ verificationResult: "success" });
 });
