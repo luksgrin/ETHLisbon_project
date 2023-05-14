@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
 const token = process.env.WEBSTORAGE_KEY;
 
-const ethers = require('ethers');
+import {ethers} from "ethers";
 
 // Contract configuration
 const provider = new ethers.providers.JsonRpcProvider("https://rpc-mumbai.maticvigil.com/");
