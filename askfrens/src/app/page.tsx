@@ -48,7 +48,7 @@ const Page: React.FC = () => {
       setView("answers");
     } else {
       var lensVar = fetchProfileDataByHandle(_address);
-      console.log(lensVar);
+      console.log("LENS", lensVar);
       if (lensVar.address.length === 42) {
         setSearched(search);
         setView("answers");
