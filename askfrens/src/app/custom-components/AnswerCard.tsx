@@ -3,7 +3,17 @@ import React, { useState, ReactNode } from "react";
 import "./QACards.css";
 import DonationModal from "./Donate";
 
-export default function AnswerCard({}: {}) {
+export default function AnswerCard({
+  sender,
+  receiver,
+  question,
+  date,
+}: {
+  sender: any;
+  receiver: any;
+  question: any;
+  date: any;
+}) {
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
     null
   );
@@ -15,13 +25,19 @@ export default function AnswerCard({}: {}) {
   const closeModal = () => {
     setModalContent(null);
   };
-
+  const getLens = () => {
+    return "test.lens";
+  };
   return (
     <>
       <div className="Card">
         <div className="Card__Header">
           <div className="WrapperImage">
-            <img className="AvatarImage" src="avatar" alt="avatar"></img>
+            <img
+              className="AvatarImage"
+              src="https://user-images.githubusercontent.com/12957692/193897314-e6d265e2-6951-4799-ad29-5bd881e04fc5.svg"
+              alt="avatar"
+            ></img>
           </div>
           Question default title
         </div>
@@ -32,7 +48,13 @@ export default function AnswerCard({}: {}) {
 
             <button
               onClick={() =>
-                openModal(<DonationModal closeModal={closeModal} />)
+                openModal(
+                  <DonationModal
+                    closeModal={closeModal}
+                    address={sender}
+                    lens={getLens(sender)}
+                  />
+                )
               }
             >
               Donate

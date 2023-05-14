@@ -1,5 +1,6 @@
 //@ts-ignore
-import React, { useState, ReactNode } from "react";
+import React, { useState, useEffect } from "react";
+
 import QuestionCard from "./AnswerCard";
 import "./Actors.css";
 import SismoButton from "./SismoButtonQuestion";
@@ -21,6 +22,31 @@ export default function Alice({
   );
 
   const [question, setQuestion] = useState<string>("");
+
+  const cids = [
+    "bafybeidmtyxkghze3gsirlm6l4ydfb4hvvvk3o2bsrz7fivohlggufeiyu",
+    "bafybeigw3mjlxfwk6o2vudilg6cbj547zaipuyvwpumxk6dcf25phuunxa",
+    "bafybeibsoednknhtnqkrepk5tuolgpejl2xbv2smlpip4ovrxsgnjbs5vy",
+    "bafybeifwh2bgj4d5xxtdrnjfwkpcooevqxtodgrxkrsgx342s4oyrc2epq",
+    "bafybeianvapgaj53b3wtgkbwmtmxa4nzptboffsbatdzem2djbiklkdvfe",
+    "bafybeibpk4ll3ez7b7vcn3vls4ervucar5svsapaiwoflqojmiv4c3enras",
+  ];
+  const [questionData, setQuestionData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const dataPromises = cids.map(async (cid) => {
+        const res = await fetch(`http://localhost:3001/read/${cid}`);
+        const content = await res.json();
+        return content;
+      });
+
+      const allData = await Promise.all(dataPromises);
+      setQuestionData(allData);
+    };
+
+    fetchData();
+  }, []);
 
   const createQuestion = () => {
     console.log("QuestionCreated");
@@ -89,12 +115,15 @@ export default function Alice({
       </div>
 
       <div className="Questions__DisplayContent">
-        {
-          // for loop with .
-        }
-        <QuestionCard></QuestionCard>
-        <QuestionCard></QuestionCard>
-        <QuestionCard></QuestionCard>
+        {questionData.map((item, index) => (
+          <QuestionCard
+            key={index}
+            sender={item.sender}
+            receiver={item.receiver}
+            question={item.question}
+            date={item.date}
+          />
+        ))}
       </div>
     </div>
   );

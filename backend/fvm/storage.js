@@ -61,7 +61,7 @@ async function all(iterable) {
   return result;
 }
 
-const data = { name: "David", job: "Sucker" };
+const data = { name: "David", job: "Coder" };
 // storeFile(data)
 //   .then((cid) => readFile(cid))
 //   .catch(console.error);
@@ -73,7 +73,7 @@ const data = { name: "David", job: "Sucker" };
 const cid1 = "bafybeihypepnqzlkhdvtcen2rfacy3f723yvybin64yz62rapx7w2zy5sy";
 const cid2 = "bafybeie3xwbqiall477iy36u6ek2mr6bjx5vvbwm5rcgtebmiw74cgm67e";
 const cid3 = "bafybeibgjz73qif3wl7eovwo2rnzq72fdoyorpcqpmxdyme6plaettam2eß";
-const cid4 = "bafybeiagupothay7owoxnexjezepeg5g5nnl5k3mdtm62xtwgygzgc3kgu";
+const cid4 = "bafybeidmtyxkghze3gsirlm6l4ydfb4hvvvk3o2bsrz7fivohlggufeiyu";
 
 readFile(cid4)
   .then((content) => console.log(content))

@@ -7,8 +7,12 @@ import "./Donate.css";
 
 export default function DonationModal({
   closeModal,
+  address,
+  lens,
 }: {
   closeModal: () => void;
+  address: any;
+  lens: any;
 }) {
   // use our RRUSD stablecoint by default
   const [selectedToken, setSelectedToken] = useState<string>(
@@ -50,7 +54,7 @@ export default function DonationModal({
         </button>
 
         <div className="DonationModal__Left">
-          <h2>Title</h2>
+          <h2>Donation</h2>
           <select
             value={selectedToken}
             onChange={(e) => {
@@ -74,8 +78,14 @@ export default function DonationModal({
 
         <div className="DonationModal__Right">
           <h2>Donation Details</h2>
-          <p>Address: {/* Display address here */}</p>
-          <p>Lens Name: {/* Display lens name here */}</p>
+          <p>
+            Address: {address}
+            {/* Display address here */}
+          </p>
+          <p>
+            Lens Name: {lens}
+            {/* Display lens name here */}
+          </p>
 
           <div className="DonationModal__Buttons">
             <button onClick={handleUserInput}>Donate</button>
