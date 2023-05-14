@@ -27,9 +27,15 @@ const Page: React.FC = () => {
   };
 
   const lookForFrens = () => {
-    console.log("ASDASDJKL", search);
-    setSearched(search);
-    setView("answers");
+    if (search.length === 42) {
+      console.log("ASDASDJKL", search);
+      setSearched(search);
+      setView("answers");
+    } else
+      console.log(
+        "Not good length, try",
+        "0x0000000000000000000000000000000000000002"
+      );
   };
 
   return (
