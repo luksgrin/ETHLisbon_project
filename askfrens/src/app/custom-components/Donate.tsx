@@ -14,7 +14,8 @@ export default function DonationModal({
 }: {
   closeModal: () => void;
 }) {
-  const [selectedToken, setSelectedToken] = useState<string>("");
+  // use our RRUSD stablecoint by default
+  const [selectedToken, setSelectedToken] = useState<string>("0xC516EA1e64C8000a1F623C4d8cc1E841EC2e7994");
   const [amount, setAmount] = useState<any>(0);
 
   const handleClickOutside = (e: React.MouseEvent) => {
@@ -31,10 +32,11 @@ export default function DonationModal({
   const handleUserInput = () => {
     var selected_amount = amount;
     var selected_token = selectedToken;
-    var selected_address = "0x26D7fDCa6241D1f5B1a92288eb15b14Cf7C0c98d" 
-    
+
+    console.log("token: ", selected_token)
     sendTransaction({
-      to: selected_address,
+      //chainId: 80001,
+      to: selected_token,
       value: parseEther(selected_amount.toString()),
     })
   }
@@ -58,7 +60,7 @@ export default function DonationModal({
             }
           >
             {/* Add your tokens here */}
-            <option value="rrusd">RRUSD</option>
+            <option value="0xC516EA1e64C8000a1F623C4d8cc1E841EC2e7994">RRUSD</option>
             <option value="gho">GHO</option>
             <option value="apecoin">APE</option>
           </select>
