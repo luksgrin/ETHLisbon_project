@@ -84,6 +84,16 @@ cd askfrens && \
 yarn install && \ # if not done before
 yarn dev
 ```
+### At backend
+```bash
+yarn install
+
+```
+Add .env file to backend folder with
+```
+WEBSTORAGE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDUzRGEyMjRBM2ExNWU2NDUxMjAyNzI3MTNlOTE4NzA4ZkNFYzkwMTgiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODM5NzU4NDQwNTMsIm5hbWUiOiJMaXNib25IYWNrYXRob24ifQ.RzOwEWFzeJ_2ZqJNlb_oBRpogkNpwBWIqpudsoFHMfM
+```
+
 ## Actors
 - People who do questions (Quevedo)
 - People who answers (Alice)
