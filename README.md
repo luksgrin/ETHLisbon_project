@@ -7,11 +7,17 @@ _This project was built during the ETH Global Lisbon Hackathon held in Lisbon fr
 
 AskLens is a social media platform where users can ask questions and get answers from other users. The platform is built on top of the [**Lens Social Graph**](https://www.lens.xyz/), employs [**Sismo Connect**](https://www.sismo.io/) as its SSO and it's integrated with other DeFi protocols to allow users to donate to other users and to trade their donations.
 
+![Asking and answering questions!](./img/askingQuestions.png)
+
 ---
 
 ### Sismo Connect utility
 
 Users log in into AskLens via Sismo Connect, which verifies that the user owns a Lens handle NFT (the Data Gem in this usecase) without having to reveal their private wallet (i.e. they can connect to this DApp and with a wallet that does not hold a Lens handle NFT but is in the same data vault as an address that does hold a Lens handle NFT).
+
+![Sismo for auth](./img/sismo_magic.png)
+
+![Stay anon if you want!](./img/vault_makes_anon.png)
 
 The following `bytes16` data are the relevant pieces that connect this DApp to Sismo Connect:
 
@@ -41,6 +47,8 @@ The workflow of the platform is as follows:
 
 1. A user can create a question to another user by calling the `mint` function of the `AskLensQuestionWSismo` contract. This function will verify that said user can prove ownership of a Lens handle NFT, via Sismo Connect.
 
+![Asking a question](./img/question_mint.png)
+
 2. The question text is stored in the `Filecoin` IPFS storage. The saved data is a JSON schema such as the one provided below:
 
 ```json
@@ -51,6 +59,7 @@ The workflow of the platform is as follows:
   "timestamp":  1684004363,
 }
 ```
+![Data stored in IPFS and signature made](./img/identified_ask.png)
 
 3. An ERC155 "question" token is minted to both users: the questioner and the answerer, where the token URI is the IPFS hash of the JSON schema above.
 
@@ -69,6 +78,8 @@ The workflow of the platform is as follows:
 ```
 
 6. The ERC155 "question" token is burned (for both the answerer and the questioner), and then an ERC1155 "thread" token is minted to both users again. Similarly as for the "question" ERC1155, the token URI is the IPFS hash of the JSON schema above.
+
+![Mint answers!](./img/answer_mint.png)
 
 7. You can visualize these "threads" in the AskLens frontend!
 
