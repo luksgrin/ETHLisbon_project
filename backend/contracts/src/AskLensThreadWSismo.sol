@@ -37,6 +37,13 @@ contract AskLensThreadWSismo is ERC1155, Ownable, SismoConnect {
 
     function mint(bytes memory sismoConnectResponse, address quevedo, uint256 questionId, string memory tokenURI) external returns (uint256) {
 
+        AskLensQuestionWSismo _AskLensQuestion = AskLensQuestionWSismo(AskLensQuestionContract);
+
+        require(
+            _AskLensQuestion.balanceOf(msg.sender, questionId) > 0,
+            "Can't answer a question that doesn't belong to you"
+        );
+
         SismoConnectVerifiedResult memory result = verify({
             responseBytes: sismoConnectResponse,
             // we want users to prove that they own a Sismo Vault
@@ -46,19 +53,12 @@ contract AskLensThreadWSismo is ERC1155, Ownable, SismoConnect {
             auth: buildAuth({authType: AuthType.VAULT}),       
             claim: buildClaim({groupId: GROUP_ID}),
             // we also want to check if the signed message provided in the response is the signature of the user's address
-            signature:  buildSignature({message: abi.encode(msg.sender)})
+            signature:  buildSignature({message: abi.encode(msg.sender, quevedo, questionId, tokenURI)})
         });
 
 
 
         _tokenIds.increment();
-
-        AskLensQuestionWSismo _AskLensQuestion = AskLensQuestionWSismo(AskLensQuestionContract);
-
-        require(
-            _AskLensQuestion.balanceOf(msg.sender, questionId) > 0,
-            "Can't answer a question that doesn't belong to you"
-        );
 
         _AskLensQuestion.burn(questionId, quevedo, msg.sender);
 
