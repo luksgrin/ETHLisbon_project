@@ -742,6 +742,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./src/app/providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "Providers": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "Providers",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/app/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/page.tsx",
@@ -816,32 +842,6 @@ self.__RSC_MANIFEST={
         "name": "Connected",
         "chunks": [
           "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/providers.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "Providers": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "Providers",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -2550,6 +2550,30 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#Providers": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "Providers",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Actors.css#": {
       "id": "null",
       "name": "default",
@@ -2654,30 +2678,6 @@ self.__RSC_MANIFEST={
       "name": "Connected",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#Providers": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "Providers",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     }
