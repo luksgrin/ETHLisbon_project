@@ -6,6 +6,7 @@ import {
 } from "@sismo-core/sismo-connect-react";
 import { encodeAbiParameters } from "viem";
 import { useAccount } from "wagmi";
+import React, { useState, ReactNode } from "react";
 const ASK_LENS_APP_ID = "0x639312ba6099cd3a698a33416a25d345";
 const LENS_HANDLE_HOLDER_GROUP_ID = "0x945e9e7b1f95899328bf9c4490aba9fc";
 
@@ -22,6 +23,8 @@ export default function SismoButton({
   cid: any;
   receiver: any;
 }) {
+  const [_response, setResponseSismo] = useState<any>();
+
   const signQuestion = (
     questioner: any,
     answerer: string,
@@ -92,10 +95,20 @@ export default function SismoButton({
         signature={{ message: signQuestion(address, answerer, ipfsHash) }}
         // onResponseBytes calls a 'setResponse' function
         // with the responseBytes returned by the Sismo Vault
-        onResponseBytes={(responseBytes: string) => setResponse(responseBytes)}
+        onResponseBytes={(responseBytes: string) =>
+          setResponseSismo(responseBytes)
+        }
         // Some text to display on the button
         text={"Log in with Sismo"}
       />
+      <button
+        onClick={() => {
+          console.log("lmao");
+          setResponse(_response);
+        }}
+      >
+        Work if sismo
+      </button>
     </>
   );
 }
