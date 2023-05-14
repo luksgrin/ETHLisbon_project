@@ -6,4 +6,7 @@ libs = ["lib"]
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
 
 [rpc_endpoints]
-polygon = "${POLYGON_RPC_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+
+[etherscan]
+mumbai = { key = "${MUMBAI_API_KEY}" }
