@@ -56,3 +56,5 @@ next/*
 
 /askfrens/.next/
 ./askfrens/.next/
+
+./yarn.lock
