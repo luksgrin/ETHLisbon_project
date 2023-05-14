@@ -39,13 +39,13 @@ contract AskLensQuestionWSismo is ERC1155, Ownable, SismoConnect {
         SismoConnectVerifiedResult memory result = verify({
             responseBytes: sismoConnectResponse,
             // we want users to prove that they own a Sismo Vault
-            // and that they are members of the group with the id 0x42c768bb8ae79e4c5c05d3b51a4ec74a
+            // and that they are members of the group
             // we are recreating the auth and claim requests made in the frontend to be sure that 
             // the proofs provided in the response are valid with respect to this auth request
             auth: buildAuth({authType: AuthType.VAULT}),       
             claim: buildClaim({groupId: GROUP_ID}),
             // we also want to check if the signed message provided in the response is the signature of the user's address
-            signature:  buildSignature({message: abi.encode(msg.sender)})
+            signature:  buildSignature({message: abi.encode(msg.sender, alice, tokenURI)})
         });
 
 

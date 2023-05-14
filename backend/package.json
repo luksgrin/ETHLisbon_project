@@ -1,11 +1,16 @@
 {
   "dependencies": {
     "@1inch/fusion-sdk": "^0.1.7",
+    "@lens-protocol/client": "^1.0.1",
+    "@lens-protocol/react-web": "^1.0.1",
+    "@lens-protocol/wagmi": "^1.0.1",
     "@types/bn.js": "^5.1.1",
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "ethers": "5",
     "express": "^4.18.2",
+    "wagmi": "0.12.13",
     "web3.storage": "^4.5.4"
   },
   "type": "module"
