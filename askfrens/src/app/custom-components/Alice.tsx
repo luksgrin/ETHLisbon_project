@@ -82,7 +82,7 @@ export default function Alice({
               onChange={(e) => setQuestion(e.target.value)}
             />
             <button onClick={() => createQuestion()}>Submit</button>
-            {sismo && <SismoButton cid={_cid} receiver={receiver} />}{" "}
+            <SismoButton cid={_cid} receiver={receiver} />
             {/* SismoButton will only render when sismo state is true */}
           </div>
         </div>

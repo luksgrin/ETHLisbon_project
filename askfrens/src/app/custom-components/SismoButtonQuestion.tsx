@@ -28,7 +28,7 @@ export default function SismoButton({
   var web3: any;
   const checkReceiver = (receiver: any) => {
     if (receiver.length === 42) return receiver;
-    window.alert(
+    console.log(
       "receiver has no good address length, returning by default 0x0000000000000000000000000000000000000002"
     );
     return "0x0000000000000000000000000000000000000002";

@@ -32,7 +32,7 @@ const Page: React.FC = () => {
       setSearched(search);
       setView("answers");
     } else
-      window.alert(
+      console.log(
         "Not good length, try " + "0x0000000000000000000000000000000000000002"
       );
   };
