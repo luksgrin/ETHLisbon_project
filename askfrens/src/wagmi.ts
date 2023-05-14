@@ -1,5 +1,5 @@
 import { configureChains, createConfig } from 'wagmi'
-import { goerli, mainnet } from 'wagmi/chains'
+import { goerli, mainnet, polygon, polygonMumbai } from 'wagmi/chains'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
@@ -23,7 +23,7 @@ export const config = createConfig({
     new CoinbaseWalletConnector({
       chains,
       options: {
-        appName: 'wagmi',
+        appName: 'AskFrens',
       },
     }),
     new WalletConnectConnector({

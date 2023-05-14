@@ -4,7 +4,8 @@ self.__RSC_CSS_MANIFEST={
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\QACards.css",
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Actors.css",
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Donate.css",
-      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css"
+      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css",
+      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.css"
     ]
   },
   "cssModules": {
@@ -12,7 +13,8 @@ self.__RSC_CSS_MANIFEST={
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\QACards.css",
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Actors.css",
       "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Donate.css",
-      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css"
+      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css",
+      "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.css"
     ]
   }
 }

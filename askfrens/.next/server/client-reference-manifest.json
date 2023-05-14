@@ -742,32 +742,6 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/providers.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "Providers": {
-        "id": "(sc_client)/./src/app/providers.tsx",
-        "name": "Providers",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./src/app/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/page.tsx",
@@ -842,6 +816,32 @@
         "name": "Connected",
         "chunks": [
           "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "Providers": {
+        "id": "(sc_client)/./src/app/providers.tsx",
+        "name": "Providers",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -2550,30 +2550,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#Providers": {
-      "id": "(app-client)/./src/app/providers.tsx",
-      "name": "Providers",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\custom-components\\Actors.css#": {
       "id": "null",
       "name": "default",
@@ -2596,6 +2572,13 @@
       ]
     },
     "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\general.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\page.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -2671,6 +2654,30 @@
       "name": "Connected",
       "chunks": [
         "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Deiv\\Documents\\Web3\\LisbonHackhaton\\final\\ETHLisbon_project\\askfrens\\src\\app\\providers.tsx#Providers": {
+      "id": "(app-client)/./src/app/providers.tsx",
+      "name": "Providers",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     }
