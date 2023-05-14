@@ -4076,7 +4076,11 @@ valtio@1.10.5:
     proxy-compare "2.5.1"
     use-sync-external-store "1.2.0"
 
+<<<<<<< HEAD
 viem@^0.3.1, viem@~0.3.18:
+=======
+viem@^0.3.1, viem@^0.3.24:
+>>>>>>> cc6cd972db28b029528c57291f85a23bea748ec4
   version "0.3.24"
   resolved "https://registry.yarnpkg.com/viem/-/viem-0.3.24.tgz#94530ec57f17469cd9c7216cb58290a739193f32"
   integrity sha512-Oa2FgJ4mswl1I6nPPnyBnt+9+8w4/xcw4XjB1q115g9JJOqX8Ic9nq4Z31lDAonjtCca+K7u1M30t1lFXafqFg==
