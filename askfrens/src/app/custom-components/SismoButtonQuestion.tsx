@@ -123,7 +123,7 @@ export default function SismoButton({
   const setResponse = async (response: any) => {
     console.log("My friends this is the response:");
     console.log(response, receiver, cid);
-    await setSismoResponse(response, receiver, cid);
+    await getMetaTransaction(response, receiver, cid);
     // response byte + cid +
     return response;
   };
