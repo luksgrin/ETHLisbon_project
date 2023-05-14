@@ -8,23 +8,26 @@ import SismoButton from "./custom-components/SismoButtonQuestion";
 import SismoButton2 from "./custom-components/SismoButtonAnswer";
 import "./general.css";
 import "./page.css";
-
+import { useAccount } from "wagmi";
 const Page: React.FC = () => {
   const [view, setView] = useState<string>("answers");
   const [search, setSearch] = useState<string>("");
   const [searchedAddress, setSearched] = useState<string>("");
+  const { address } = useAccount();
+
   const renderContent = () => {
     switch (view) {
       case "answers":
-        return <Alice />; // replace with your answer related components
+        return <Alice receiver={searchedAddress} sender={address} />;
       case "questions":
-        return <Quevedo />; // replace with your question related components
+        return <Quevedo receiver={searchedAddress} sender={address} />;
       default:
-        return <Alice />;
+        return <Alice receiver={searchedAddress} sender={address} />;
     }
   };
 
   const lookForFrens = () => {
+    console.log("ASDASDJKL", search);
     setSearched(search);
     setView("answers");
   };
@@ -52,7 +55,7 @@ const Page: React.FC = () => {
           <button onClick={() => setView("answers")}>My Answers</button>
           <button onClick={() => setView("questions")}>My Questions</button>
         </div>
-        <SismoButton />
+        {/* <SismoButton /> */}
         <div className="Rendered__Content">{renderContent()}</div>
       </Connected>
     </div>

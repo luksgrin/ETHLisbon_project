@@ -2,21 +2,59 @@
 import React, { useState, ReactNode } from "react";
 import QuestionCard from "./AnswerCard";
 import "./Actors.css";
+import SismoButton from "./SismoButtonQuestion";
 
-export default function AliceLayout({}: {}) {
+export default function Alice({
+  sender,
+  receiver,
+}: {
+  sender: any;
+  receiver: string;
+}) {
   const [privateState, setPrivateState] = useState(false);
+  const [sismo, setSismo] = useState(false);
+  const [_cid, setCid] = useState("");
   const togglePrivateState = () => setPrivateState(!privateState);
 
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
     null
   );
 
-  const openModal = (content: React.ReactNode) => {
-    setModalContent(content);
+  const [question, setQuestion] = useState<string>("");
+
+  const createQuestion = () => {
+    console.log("ASDAS");
+    storeIPFS(sender, receiver, question, Date.UTC.toString);
   };
 
-  const closeModal = () => {
-    setModalContent(null);
+  const storeIPFS = async (
+    sender: any,
+    receiver: any,
+    question: any,
+    date: any
+  ) => {
+    const data = { sender, receiver, question, date };
+    console.log(data);
+    try {
+      const response = await fetch("http://localhost:3001/store", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const { cid } = await response.json();
+        console.log(`Stored file with CID: ${cid}`);
+        setSismo(true);
+        setCid(String(cid));
+      } else {
+        console.error("Failed to store file");
+      }
+    } catch (err) {
+      console.error(`Failed to store file: ${err}`);
+    }
   };
 
   return (
@@ -31,7 +69,17 @@ export default function AliceLayout({}: {}) {
         </div>
         <div className="AskMe">
           <label htmlFor="question">Ask me:</label>
-          <input type="text" id="question" name="question" />
+          <div className="Form">
+            <input
+              type="text"
+              id="question"
+              name="question"
+              onChange={(e) => setQuestion(e.target.value)}
+            />
+            <button onClick={() => createQuestion()}>Submit</button>
+            {sismo && <SismoButton cid={_cid} receiver={receiver} />}{" "}
+            {/* SismoButton will only render when sismo state is true */}
+          </div>
         </div>
       </div>
 
