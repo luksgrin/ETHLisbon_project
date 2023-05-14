@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { readFile, storeFile } from "./fvm/storage.js";
+import { sismoVerification } from "./sismo-verification/sismo.js";
 
 const app = express();
 app.use(cors());
@@ -32,6 +33,16 @@ app.get("/read/:cid", async (req, res) => {
     console.error(`Failed to read file: ${err}`);
     res.status(500).json({ error: "Failed to read file" });
   }
+});
+
+app.post("/sismo-verification", (req, res) => {
+  console.log(req.body);
+  const { sismo, receiver, cid } = req.body;
+  // Perform the sismo verification logic here
+  // ...
+  
+  // Return the verification result
+  res.json({ verificationResult: "success" });
 });
 
 const port = process.env.PORT || 3001;
