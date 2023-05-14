@@ -67,7 +67,12 @@ export default function DonationModal({
               RRUSD
             </option>
             <option value="gho">GHO</option>
-            <option value="apecoin">APE</option>
+            <option value="0x4d224452801aced8b2f0aebe155379bb5d594381">
+              APE
+            </option>
+            <option value="0x2791bca1f2de4661ed88a30c99a7a9449aa84174">
+              USDC
+            </option>
           </select>
           <input
             type="number"
