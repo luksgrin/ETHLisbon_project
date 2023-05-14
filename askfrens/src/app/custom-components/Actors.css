@@ -47,6 +47,7 @@
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .Questions__DisplayContent {
@@ -54,5 +55,28 @@
   flex-direction: column;
   flex: 1 1;
   width: 100%;
+  align-items: center;
+}
+
+.Card__UserAvatar {
+  width: 120px; /* Adjust the width to your desired size */
+  height: 138px; /* Adjust the height to your desired size */
+  background-color: #f2f2f2; /* Soft background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+    50% 0%,
+    90% 25%,
+    90% 75%,
+    50% 100%,
+    10% 75%,
+    10% 25%
+  ); /* Hexagonal shape */
+}
+
+.Avatar__Container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }

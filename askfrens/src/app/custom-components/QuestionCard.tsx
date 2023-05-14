@@ -3,7 +3,15 @@ import React, { useState, ReactNode } from "react";
 import "./QACards.css";
 import DonationModal from "./Donate";
 
-export default function QuestionCard({}: {}) {
+export default function QuestionCard({
+  sender,
+  receiver,
+}: // time,
+// question,
+{
+  sender: any;
+  receiver: string;
+}) {
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
     null
   );
@@ -42,7 +50,6 @@ export default function QuestionCard({}: {}) {
             >
               Donate
             </button>
-            ;
             {modalContent && (
               <div className="modal">
                 <button onClick={closeModal}>Close</button>

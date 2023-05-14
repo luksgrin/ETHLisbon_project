@@ -29,22 +29,21 @@ export default function AnswerCard({}: {}) {
           <div className="Card__Footer">
             <div>UserName</div>
             <div>Text time</div>
-            <button>Donate</button>
-            <button>Solve</button>
+
+            <button
+              onClick={() =>
+                openModal(<DonationModal closeModal={closeModal} />)
+              }
+            >
+              Donate
+            </button>
+            {modalContent && (
+              <div className="modal">
+                <button onClick={closeModal}>Close</button>
+                {modalContent}
+              </div>
+            )}
           </div>
-          <button
-            onClick={() => openModal(<DonationModal closeModal={closeModal} />)}
-          >
-            Donate
-          </button>
-          ;
-          {modalContent && (
-            <div className="modal">
-              <button onClick={closeModal}>Close</button>
-              {modalContent}
-            </div>
-          )}
-          <button>Solve</button>
         </div>
       </div>
     </>

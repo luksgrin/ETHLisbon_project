@@ -19,9 +19,11 @@ export default function RootLayout({
         <button className="PrivateButton" onClick={togglePrivateState}>
           {privateState ? "Public" : "Private"}
         </button>
-        <img className="Card__UserAvatar" src="avatar" alt="avatar" />
+        <div className="Avatar__Container">
+          <img className="Card__UserAvatar" src="avatar" alt="avatar" />
+        </div>{" "}
         <div className="Card__UserDescription">
-          {/* brief description under avatar image */}
+          brief description under avatar image
         </div>
       </div>
 

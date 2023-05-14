@@ -24,7 +24,8 @@ export default function Alice({
 
   const createQuestion = () => {
     console.log("ASDAS");
-    storeIPFS(sender, receiver, question, Date.UTC.toString);
+    var isoDateString = new Date().toISOString();
+    storeIPFS(sender, receiver, question, isoDateString);
   };
 
   const storeIPFS = async (
@@ -63,8 +64,11 @@ export default function Alice({
         <button className="PrivateButton" onClick={togglePrivateState}>
           {privateState ? "Public" : "Private"}
         </button>
-        <img className="Card__UserAvatar" src="avatar" alt="avatar" />
+        <div className="Avatar__Container">
+          <img className="Card__UserAvatar" src="avatar" alt="avatar" />
+        </div>
         <div className="Card__UserDescription">
+          Lorem ipsim description
           {/* brief description under avatar image */}
         </div>
         <div className="AskMe">

@@ -37,10 +37,40 @@ export default function SismoButton({
     );
   };
 
+  const setSismoResponse: any = async (
+    response: any,
+    receiver: string,
+    cid: string
+  ) => {
+    console.log("My friends this is the response:");
+    console.log(response, receiver, cid);
+
+    try {
+      const res = await fetch("http://localhost:3001/sismo-verification", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ response, receiver, cid }),
+      });
+
+      const data = await res.json();
+
+      // Handle the response data from the server here
+      console.log(data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
+    return response;
+  };
+
   //hardcoded bullshit
   const setResponse = (response: any) => {
     console.log("My friends this is the response:");
-    console.log(response);
+    console.log(response, receiver, cid);
+    setSismoResponse(response, receiver, cid);
+    // response byte + cid +
     return response;
   };
   const { address } = useAccount();

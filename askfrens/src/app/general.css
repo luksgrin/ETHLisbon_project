@@ -82,3 +82,11 @@ select::-ms-expand {
 h2 {
   color: var(--fake-white);
 }
+
+.Form {
+  margin: 0.5rem;
+}
+
+.Main__Content {
+  padding: 2rem 0;
+}

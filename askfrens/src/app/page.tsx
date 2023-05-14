@@ -32,9 +32,8 @@ const Page: React.FC = () => {
       setSearched(search);
       setView("answers");
     } else
-      console.log(
-        "Not good length, try",
-        "0x0000000000000000000000000000000000000002"
+      window.alert(
+        "Not good length, try " + "0x0000000000000000000000000000000000000002"
       );
   };
 
@@ -45,7 +44,7 @@ const Page: React.FC = () => {
           <h1>Ask Frens</h1>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Lens user or address to search..."
             className="search-bar"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
