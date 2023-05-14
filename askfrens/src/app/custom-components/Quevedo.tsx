@@ -31,9 +31,9 @@ export default function RootLayout({
         {
           // for loop with .
         }
-        {/* <QuestionCard></QuestionCard>
         <QuestionCard></QuestionCard>
-        <QuestionCard></QuestionCard> */}
+        <QuestionCard></QuestionCard>
+        <QuestionCard></QuestionCard>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export default function Alice({
   const [question, setQuestion] = useState<string>("");
 
   const createQuestion = () => {
-    console.log("ASDAS");
+    console.log("QuestionCreated");
     var isoDateString = new Date().toISOString();
     storeIPFS(sender, receiver, question, isoDateString);
   };

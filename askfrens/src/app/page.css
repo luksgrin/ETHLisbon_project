@@ -13,6 +13,7 @@
   background-color: #fff;
   padding: 1em;
   z-index: 1;
+  background: #1c1c1c1c;
 }
 
 .Header__Main {
@@ -26,6 +27,7 @@
   padding: 0.5em;
   border: 1px solid #ccc;
   border-radius: 4px;
+  min-width: 200px;
 }
 
 .Connect__Buttons {
@@ -50,6 +52,7 @@
   text-align: center;
   gap: 1rem;
   display: flex;
+  margin-top: 2rem;
 }
 .sismoConnectButton {
   justify-content: center;
@@ -58,4 +61,8 @@
   display: flex;
   margin: auto;
   margin-top: 1rem;
+}
+
+.ConnectButton {
+  margin-left: 0.5rem;
 }

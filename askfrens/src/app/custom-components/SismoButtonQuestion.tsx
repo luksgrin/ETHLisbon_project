@@ -64,7 +64,6 @@ export default function SismoButton({
 
     return response;
   };
-
   //hardcoded bullshit
   const setResponse = (response: any) => {
     console.log("My friends this is the response:");
